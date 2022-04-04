@@ -23,19 +23,16 @@
               <a href="#">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Подбор программы</a>
+              <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main-container">
-
-      <h1 class="visually-hidden">Кэт энерджи - лучшая еда для котов</h1>
-
       <section class="program">
         <div class="program__wrapper">
-          <h2 class="program__title">Функциональное питание для котов</h2>
+          <h1 class="program__title">Функциональное питание для котов</h1>
           <p class="program__text">Занялся собой? Займись котом!</p>
           <a href="#" class="program__button">Подобрать программу</a>
         </div>
@@ -58,41 +55,33 @@
       <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
-            <p class="advantages__text">Функциональное питаниесодержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
+          <li class="advantages__item">Функциональное питаниесодержит только полезные питательные вещества.</li>
+          <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>
       </section>
       <section class="efficiency">
         <div class="efficiency__wrapper">
           <h2 class="efficiency__title">Живой пример</h2>
           <p class="efficiency__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="efficiency__statistics">
-            <ul class="efficiency__statistics-list">
-              <li class="efficiency__statistics-item">
-                <p class="efficiency__statistics-result">5 кг</p>
-                <small class="efficiency__statistics-subtitle">снижение веса</small>
-              </li>
-              <li class="efficiency__statistics-item">
-                <p class="efficiency__statistics-result">60 дней</p>
-                <small class="efficiency__statistics-subtitle">затрачено времени</small>
-              </li>
-            </ul>
-          </div>
+          <ul class="efficiency__statistics-list">
+            <li class="efficiency__statistics-item">
+              <p class="efficiency__statistics-result">5 кг</p>
+              <small class="efficiency__statistics-subtitle">снижение веса</small>
+            </li>
+            <li class="efficiency__statistics-item">
+              <p class="efficiency__statistics-result">60 дней</p>
+              <small class="efficiency__statistics-subtitle">затрачено времени</small>
+            </li>
+          </ul>
         </div>
         <div class="was-became">
           <img src="/source/img/was-became.png" alt="Фото кота." class="was-became__images">
           <b class="was">Было</b>
-          <input type="range" min="1" max="100" value="50">
+          <label class="was-became__toggle toggle" for="toggle">
+            <input type="checkbox" name="toggle" id="toggle" class="toggle__input">
+          </label>
           <b class="became">Стало</b>
         </div>
       </section>
@@ -108,7 +97,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a href="#" class="main-footer__link">
-          <img src="/source/img/footer-logo.svg" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
+          <img src="/source/img/logotype-text.svg" width="128" height="24" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
