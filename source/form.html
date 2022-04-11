@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -35,11 +36,11 @@
         <p class="program-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru/" class="program-form__questionnairre" method="get">
           <div class="program-form__description">
-            <label class="program-form__name" for="name-cat">Имя:*</label>
+            <label class="program-form__info" for="name-cat">Имя:*</label>
             <input type="text" class="program-form__text" value="Барсик" name="name-cat" id="name-cat" required>
-            <label class="program-form__name" for="weight-cat">Вес (кг):*</label>
+            <label class="program-form__info" for="weight-cat">Вес (кг):*</label>
             <input type="text" class="program-form__text" value="7" name="weight-cat" id="weight-cat" required>
-            <label class="program-form__name" for="age-cat">Возраст (лет):</label>
+            <label class="program-form__info" for="age-cat">Возраст (лет):</label>
             <input type="text" class="program-form__text" value="7" name="age-cat" id="age-cat" required>
           </div>
           <div class="program-form__diet diet">
@@ -76,7 +77,7 @@
             <textarea class="comments__text" name="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="additionally">
-            <h2 class="additionally">Дополнительно</h2>
+            <h2 class="additionally__title">Дополнительно</h2>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <input type="checkbox" class="additionally__input" name="sweetener" id="sweetener" checked>
@@ -96,7 +97,7 @@
               </li>
             </ul>
           </div>
-          <button class="program-form__button" type="submit">Отправить заявку</button>
+          <button class="program-form__button button" type="submit">Отправить заявку</button>
           <p class="program-form__text">* — Обязательные поля</p>
         </form>
       </section>
@@ -111,8 +112,8 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a href="#" class="main-footer__link">
-          <img src="/source/img/footer-logo.svg" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
+        <a href="#" class="main-footer__link" aria-label="Логотип «Кэт энерджи»">
+          <img src="img/footer-logo.svg" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
@@ -129,8 +130,8 @@
         </div>
         <div class="main-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="/source/img/logo-html.svg" alt="Логотип академии." class="copyright__logo">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии.">
+            <img src="img/logo-html.svg" alt="Логотип академии." class="copyright__logo">
           </a>
         </div>
       </div>

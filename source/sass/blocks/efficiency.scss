@@ -1,0 +1,58 @@
+.efficiency {
+  padding: 0 20px;
+  background-color: #eaeaea;
+  font-family: "oswaldregular", sans-serif;
+}
+
+.efficiency__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.efficiency__text {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.efficiency__statistics-list {
+  margin: 0;
+  padding: 0;
+}
+
+.efficiency__statistics-item {
+  list-style-type: none;
+}
+
+.efficiency__statistics-result {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.efficiency__statistics-subtitle {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.efficiency__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.was,
+.became {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
