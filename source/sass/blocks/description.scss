@@ -1,0 +1,33 @@
+.description {
+  padding: 0 20px;
+  font-family: "oswaldregular", sans-serif;
+}
+
+.description__weight-loss,
+.description__weight-gain {
+  background-color: #f2f2f2;
+}
+
+.description__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.description__text {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.description__link {
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
