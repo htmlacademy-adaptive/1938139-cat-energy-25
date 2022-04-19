@@ -1,5 +1,6 @@
-.main-nav__wrapper {
-  font-family: "oswaldmedium", sans-serif;
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__item {
@@ -14,4 +15,21 @@
 .main-nav__item a {
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 500px;
+  }
 }

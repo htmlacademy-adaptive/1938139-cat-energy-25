@@ -1,7 +1,5 @@
 .efficiency {
-  padding: 0 20px;
   background-color: #eaeaea;
-  font-family: "oswaldregular", sans-serif;
 }
 
 .efficiency__title {
@@ -43,8 +41,25 @@
 }
 
 .efficiency__subtitle {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .efficiency {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .efficiency__wrapper {
+    background-color: #f2f2f2;
+  }
+
+  .efficiency__title {
+    background-color: #ffffff;
+  }
 }

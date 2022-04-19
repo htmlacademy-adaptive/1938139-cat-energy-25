@@ -1,7 +1,34 @@
 .main-header {
+  display: flex;
+  justify-content: space-between;
   width: 280px;
+  height: 66px;
   margin: 0 auto;
   padding: 0 20px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.main-header__logo {
+  text-decoration: none;
+}
+
+.main-header__logo-text {
+  margin-left: 57px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: 708px;
+    height: 100px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 980px;
+    height: 160px;
+    padding: 0 110px;
+  }
 }

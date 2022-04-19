@@ -1,5 +1,4 @@
 .advantages {
-  padding: 0 20px;
   font-family: "oswaldregular", sans-serif;
 }
 
@@ -9,19 +8,32 @@
   font-weight: 400;
 }
 
-.advantages__text {
-  color: #444444;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
 .advantages__list {
+  display: grid;
+  gap: 20px 0;
   margin: 0;
   padding: 0;
 }
 
 .advantages__item {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    grid-template-columns: 250px 250px;
+    gap: 37px 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 37px 66px;
+  }
 }
