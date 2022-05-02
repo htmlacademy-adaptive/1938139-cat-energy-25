@@ -1,11 +1,5 @@
-@media (min-width: $tablet-width) {
-  .site-list {
+.site-list {
+  @media (min-width: $tablet-width) {
     width: 440px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 500px;
   }
 }

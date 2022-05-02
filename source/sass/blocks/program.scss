@@ -1,10 +1,19 @@
 .program {
   padding: 0 20px;
   background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding: 0;
+  }
 }
 
 .program__wrapper {
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .program__title {
@@ -26,15 +35,4 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .program {
-    background-color: #ffffff;
-    padding: 0;
-  }
-
-  .program__wrapper {
-    color: #000000;
-  }
 }

@@ -7,6 +7,18 @@
   padding: 0 20px;
   color: #000000;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 100px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 980px;
+    height: 160px;
+    padding: 0 110px;
+  }
 }
 
 .main-header__logo {
@@ -15,20 +27,4 @@
 
 .main-header__logo-text {
   margin-left: 57px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-header {
-    width: 708px;
-    height: 100px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header {
-    width: 980px;
-    height: 160px;
-    padding: 0 110px;
-  }
 }
