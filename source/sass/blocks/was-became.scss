@@ -1,7 +1,13 @@
-.was,
-.became {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
+.was-became {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-left: -30px;
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
 }

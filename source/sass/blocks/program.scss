@@ -1,11 +1,19 @@
 .program {
   padding: 0 20px;
-  font-family: "oswaldregular", sans-serif;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding: 0;
+  }
 }
 
 .program__wrapper {
   color: #ffffff;
-  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .program__title {

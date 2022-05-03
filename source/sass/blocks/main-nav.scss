@@ -1,5 +1,23 @@
 .main-nav__wrapper {
-  font-family: "oswaldmedium", sans-serif;
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__item {
