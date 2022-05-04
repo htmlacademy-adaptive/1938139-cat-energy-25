@@ -1,16 +1,67 @@
 .program-form {
+  width: 280px;
+  padding: 0 20px;
   font-family: "oswaldregular", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .program-form__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-form__text {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.program-form__description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.program-form__diet {
+  margin-bottom: 25px;
+}
+
+.program-form__contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.program-form__comments {
+  margin-bottom: 22px;
 }
 
 .program-form__info {

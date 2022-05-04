@@ -1,7 +1,6 @@
 .main-footer {
   width: 320px;
   margin: 0 auto;
-  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -9,12 +8,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 980px;
+    width: 1220px;
     padding: 0 110px;
   }
 }
 
 .main-footer__wrapper {
+  background-color: #f2f2f2;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

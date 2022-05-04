@@ -36,35 +36,37 @@
         <h1 class="program-form__title">Подбор программы</h1>
         <p class="program-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru/" class="program-form__questionnairre" method="get">
-          <div class="program-form__description">
-            <label class="program-form__info" for="name-cat">Имя:*</label>
-            <input type="text" class="program-form__text" value="Барсик" name="name-cat" id="name-cat" required>
-            <label class="program-form__info" for="weight-cat">Вес (кг):*</label>
-            <input type="text" class="program-form__text" value="7" name="weight-cat" id="weight-cat" required>
-            <label class="program-form__info" for="age-cat">Возраст (лет):</label>
-            <input type="text" class="program-form__text" value="7" name="age-cat" id="age-cat" required>
-          </div>
-          <div class="program-form__diet diet">
-            <ul class="diet__list">
-              <li class="diet__item">
-                <label class="diet__control control">
-                  <input type="radio" class="control__input" value="weight loss" name="type-diet" checked>
-                  <span>Похудение</span>
-                </label>
-              </li>
-              <li class="diet__item">
-                <label class="diet__control control">
-                  <input type="radio" class="control__input" value="weight gain" name="type-diet" >
-                  <span>Набор массы</span>
-                </label>
-              </li>
-              <li class="diet__item">
-                <label class="diet__control control">
-                  <input type="radio" class="control__input" value="do not know (need advice)" name="type-diet">
-                  <span>Не знаю (нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
+          <div class="program-form__wrapper">
+            <div class="program-form__description">
+              <label class="program-form__info" for="name-cat">Имя:*</label>
+              <input type="text" class="program-form__text" value="Барсик" name="name-cat" id="name-cat" required>
+              <label class="program-form__info" for="weight-cat">Вес (кг):*</label>
+              <input type="text" class="program-form__text" value="7" name="weight-cat" id="weight-cat" required>
+              <label class="program-form__info" for="age-cat">Возраст (лет):</label>
+              <input type="text" class="program-form__text" value="7" name="age-cat" id="age-cat" required>
+            </div>
+            <div class="program-form__diet diet">
+              <ul class="diet__list">
+                <li class="diet__item">
+                  <label class="diet__control control">
+                    <input type="radio" class="control__input" value="weight loss" name="type-diet" checked>
+                    <span>Похудение</span>
+                  </label>
+                </li>
+                <li class="diet__item">
+                  <label class="diet__control control">
+                    <input type="radio" class="control__input" value="weight gain" name="type-diet" >
+                    <span>Набор массы</span>
+                  </label>
+                </li>
+                <li class="diet__item">
+                  <label class="diet__control control">
+                    <input type="radio" class="control__input" value="do not know (need advice)" name="type-diet">
+                    <span>Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="program-form__contact contact">
             <h2 class="contact__title">Контактные данные (владельца кота)</h2>
@@ -73,11 +75,11 @@
             <label for="phone" class="contact__label">Телефон:*</label>
             <input class="contact__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
           </div>
-          <div class="comments">
+          <div class="program-form__comments comments">
             <h2 class="comments__title">Комментарий</h2>
             <textarea class="comments__text" name="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-          <div class="additionally">
+          <div class="program-form__additionally additionally">
             <h2 class="additionally__title">Дополнительно</h2>
             <ul class="additionally__list">
               <li class="additionally__item">
