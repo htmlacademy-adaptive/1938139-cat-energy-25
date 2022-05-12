@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-  height: 66px;
+  min-height: 65px;
   margin: 0 auto;
   padding: 0 20px;
   color: #000000;
@@ -25,6 +25,11 @@
   text-decoration: none;
 }
 
+.main-header__logo-image {
+  padding-top: 11px;
+}
+
 .main-header__logo-text {
-  margin-left: 57px;
+  margin-left: 53px;
+  padding-bottom: 8px;
 }

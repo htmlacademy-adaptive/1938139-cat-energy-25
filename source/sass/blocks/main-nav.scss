@@ -1,4 +1,11 @@
+.main-nav {
+  position: relative;
+  min-height: 65px;
+}
+
 .main-nav__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 440px;
     margin: 0 auto;
@@ -10,9 +17,42 @@
 }
 
 .main-nav__toggle {
+  padding: 20px 0;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--opened .main-nav__toggle {
+  display: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -1px;
+    width: 26px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__open-burger {
+  display: none;
 }
 
 .main-nav__list {
@@ -21,7 +61,9 @@
 }
 
 .main-nav__item {
+  padding: 23px 0;
   color: #000000;
+  background-color: #ffffff;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;

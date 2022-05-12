@@ -1,4 +1,6 @@
 .efficiency {
+  margin-top: 49px;
+  padding: 0 20px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -14,6 +16,7 @@
 
 
 .efficiency__title {
+  margin-top: 25px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -32,15 +35,24 @@
 }
 
 .efficiency__statistics-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .efficiency__statistics-item {
+  position: relative;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
   list-style-type: none;
 }
 
 .efficiency__statistics-result {
+  margin: 0;
+  padding: 14px 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -48,7 +60,13 @@
 }
 
 .efficiency__statistics-subtitle {
+  position: absolute;
+  display: block;
+  width: 81px;
+  top: 43px;
+  left: 20px;
   color: #444444;
+  background-color: #eaeaea;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -57,6 +75,8 @@
 
 .efficiency__subtitle {
   margin: 0;
+  margin-top: 34px;
+  text-align: center;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

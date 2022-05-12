@@ -1,4 +1,6 @@
 .addres {
+  display: flex;
+  flex-direction: column;
   font-family: "oswaldregular", sans-serif;
 
   @media (min-width: $desktop-width) {
@@ -10,6 +12,7 @@
 .addres__wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;

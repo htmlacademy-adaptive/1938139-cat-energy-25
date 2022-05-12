@@ -1,4 +1,10 @@
 .site-list {
+  // display: none;
+  position: absolute;
+  width: 280px;
+  text-align: center;
+  right: 0;
+
   @media (min-width: $tablet-width) {
     width: 440px;
   }
