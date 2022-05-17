@@ -1,8 +1,17 @@
 .efficiency {
+  margin-top: 49px;
+  padding: 0 20px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1440px;
   }
 }
 
@@ -10,16 +19,26 @@
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 
 .efficiency__title {
+  margin-top: 25px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    grid-column: 1 / -1;
   }
 }
 
@@ -29,36 +48,108 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.efficiency__statistic-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 356px;
+  }
 }
 
 .efficiency__statistics-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .efficiency__statistics-item {
+  position: relative;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.efficiency__statistics-item:last-child {
+  margin-left: 28px;
 }
 
 .efficiency__statistics-result {
+  margin: 0;
+  padding: 14px 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+  }
 }
 
 .efficiency__statistics-subtitle {
+  position: absolute;
+  display: block;
+  width: 81px;
+  top: 43px;
+  left: 20px;
   color: #444444;
+  background-color: #eaeaea;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    top: 63px;
+    left: 10px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .efficiency__subtitle {
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 34px;
+  text-align: center;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 184px;
+    margin: 0;
+    font-size: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 356px;
+    margin-top: 60px;
+    text-align: start;
+  }
 }

@@ -1,5 +1,18 @@
 .site-list {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  top: 65px;
+
   @media (min-width: $tablet-width) {
-    width: 440px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
   }
 }

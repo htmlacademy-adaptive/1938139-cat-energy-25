@@ -1,4 +1,7 @@
 .addres {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   font-family: "oswaldregular", sans-serif;
 
   @media (min-width: $desktop-width) {
@@ -10,6 +13,7 @@
 .addres__wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -17,7 +21,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    position: absolute;
+    width: 565px;
+    min-height: 198px;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
   }
 }
 
@@ -26,6 +35,12 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .addres__text {
@@ -33,6 +48,13 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
 }
 
 .addres iframe {
@@ -43,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 1440px;
     margin: 0;
   }
 }

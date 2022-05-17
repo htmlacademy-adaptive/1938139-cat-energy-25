@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .description__wrapper {
@@ -18,31 +22,103 @@
   }
 }
 
-.description__weight-loss,
-.description__weight-gain {
+.description__weight-loss {
+  margin-top: 20px;
   background-color: #f2f2f2;
+  background-image: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 22px;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 92px top 62px;
+  }
+}
+
+.description__weight-gain {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  background-image: url("../img/cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 92px top 62px;
+  }
 }
 
 .description__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 91px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    padding-left: 53px;
+  }
 }
 
 .description__text {
+  position: relative;
+  width: 227px;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 29px;
+  padding-bottom: 23px;
   color: #444444;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    padding-top: 24px;
+    padding-left: 53px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.description__text::before {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 1px;
+  background-color: #d9d9d9;
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .description__link {
+  display: block;
+  width: 100px;
+  padding: 19px 80px 22px 19px;
   color: #000000;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 130px 21px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 115px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 52px;
+    padding-left: 53px;
+    background-position: 190px 62px;
+  }
 }
