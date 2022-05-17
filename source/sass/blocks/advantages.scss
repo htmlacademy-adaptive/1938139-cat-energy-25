@@ -2,6 +2,17 @@
   width: 280px;
   margin-top: 20px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .advantages__title {
@@ -11,6 +22,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 375px;
+    padding-top: 45px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -20,6 +38,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     grid-template-columns: 250px 250px;
     gap: 37px 150px;
   }

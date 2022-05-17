@@ -20,13 +20,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="#">Главная</a>
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -65,20 +65,22 @@
         </ul>
       </section>
       <section class="efficiency">
+        <h2 class="efficiency__title">Живой пример</h2>
         <div class="efficiency__wrapper">
-          <h2 class="efficiency__title">Живой пример</h2>
           <p class="efficiency__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <ul class="efficiency__statistics-list">
-            <li class="efficiency__statistics-item">
-              <p class="efficiency__statistics-result">5 кг</p>
-              <small class="efficiency__statistics-subtitle">снижение веса</small>
-            </li>
-            <li class="efficiency__statistics-item">
-              <p class="efficiency__statistics-result">60 дней</p>
-              <small class="efficiency__statistics-subtitle">затрачено времени</small>
-            </li>
-          </ul>
-          <h3 class="efficiency__subtitle">Затраты на питание: 15 000 РУБ.</h3>
+          <div class="efficiency__statistic-wrapper">
+            <ul class="efficiency__statistics-list">
+              <li class="efficiency__statistics-item">
+                <p class="efficiency__statistics-result">5 кг</p>
+                <small class="efficiency__statistics-subtitle">снижение веса</small>
+              </li>
+              <li class="efficiency__statistics-item">
+                <p class="efficiency__statistics-result">60 дней</p>
+                <small class="efficiency__statistics-subtitle">затрачено времени</small>
+              </li>
+            </ul>
+            <h3 class="efficiency__subtitle">Затраты на питание: 15 000 РУБ.</h3>
+          </div>
         </div>
         <div class="was-became">
           <img src="img/was-became.png" alt="Фото кота." class="was-became__images">
@@ -132,6 +134,5 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

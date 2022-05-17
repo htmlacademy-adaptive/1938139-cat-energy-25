@@ -6,6 +6,10 @@
     background-color: #ffffff;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .program__wrapper {
@@ -14,6 +18,7 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+    background-color: #ffffff;
   }
 }
 
@@ -25,6 +30,13 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 416px;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program__text {
@@ -36,6 +48,14 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
 
 .program__button {
@@ -50,4 +70,17 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin: 0;
+    margin-bottom: 526px;
+    font-size: 20px;
+    height: 54px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 185px;
+  }
 }

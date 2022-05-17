@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .description__wrapper {
@@ -24,6 +28,10 @@
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
   background-position: 21px 22px;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 92px top 62px;
+  }
 }
 
 .description__weight-gain {
@@ -32,6 +40,10 @@
   background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 92px top 62px;
+  }
 }
 
 .description__title {
@@ -42,6 +54,13 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    padding-left: 53px;
+  }
 }
 
 .description__text {
@@ -56,6 +75,15 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    padding-top: 24px;
+    padding-left: 53px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .description__text::before {
@@ -65,6 +93,10 @@
   height: 1px;
   background-color: #d9d9d9;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .description__link {
@@ -80,4 +112,13 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 115px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 52px;
+    padding-left: 53px;
+    background-position: 190px 62px;
+  }
 }
