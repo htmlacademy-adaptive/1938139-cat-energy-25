@@ -71,7 +71,9 @@
 }
 
 .main-nav__item:first-child {
-  width: 70px;
+  @media (min-width: $tablet-width) {
+    width: 70px;
+  }
 }
 
 .main-nav__link {
