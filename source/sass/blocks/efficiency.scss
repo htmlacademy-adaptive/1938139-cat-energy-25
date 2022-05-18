@@ -16,6 +16,8 @@
 }
 
 .efficiency__wrapper {
+  margin-top: 40px;
+
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
   }
@@ -31,6 +33,7 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  letter-spacing: -1px;
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
@@ -59,6 +62,7 @@
 .efficiency__statistic-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -78,7 +82,7 @@
 
 .efficiency__statistics-item {
   position: relative;
-  width: 124px;
+  width: 122px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
@@ -90,15 +94,16 @@
 }
 
 .efficiency__statistics-item:last-child {
-  margin-left: 28px;
+  margin-left: 32px;
 }
 
 .efficiency__statistics-result {
   margin: 0;
-  padding: 14px 0;
+  padding: 13px 0 17px 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  letter-spacing: -0.6px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -110,8 +115,8 @@
   position: absolute;
   display: block;
   width: 81px;
-  top: 43px;
-  left: 20px;
+  top: 45px;
+  left: 19px;
   color: #444444;
   background-color: #eaeaea;
   font-family: "Arial", sans-serif;
@@ -138,6 +143,7 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  letter-spacing: -0.2px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
