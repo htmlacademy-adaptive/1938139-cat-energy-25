@@ -1,6 +1,22 @@
+.diet {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
 .diet__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 0;
+  }
 }
 
 .diet__item {
@@ -9,4 +25,9 @@
   line-height: 18px;
   text-transform: uppercase;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

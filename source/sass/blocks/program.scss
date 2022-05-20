@@ -25,7 +25,7 @@
 .program__title {
   margin: 0;
   text-align: center;
-  padding-top: 26px;
+  padding-top: 27px;
   font-family: "oswaldregular", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -44,10 +44,12 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 164px;
+  padding-right: 3px;
   font-family: "oswaldregular", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;

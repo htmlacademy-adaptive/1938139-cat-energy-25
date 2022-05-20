@@ -1,12 +1,94 @@
+.contact {
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 53px;
+  left: 0;
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.contact__line {
+  width: 1220px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
 .contact__title {
+  width: 190px;
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 35px;
+  background-color: #ffffff;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 522px;
+    margin-left: 30px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding: 0 40px;
+    padding-top: 35px;
+  }
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 110px;
+  }
+}
+
+.contact__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
 }
 
 .contact__label {
+  width: 61px;
   color: #444444;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 71px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contact__input {
+  width: 100%;
+  height: 39px;
+  margin-left: 12px;
+
+  @media (min-width: $desktop-width) {
+    width: 486px;
+  }
 }

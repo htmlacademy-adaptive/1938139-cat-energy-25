@@ -27,7 +27,7 @@
   background-color: #f2f2f2;
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
-  background-position: 21px 22px;
+  background-position: 22px 21px;
 
   @media (min-width: $tablet-width) {
     background-position: right 92px top 62px;
@@ -53,6 +53,7 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  letter-spacing: -0.7px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -106,10 +107,11 @@
   color: #000000;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 130px 21px;
+  background-position: 121px 21px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  letter-spacing: -0.3px;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -121,4 +123,8 @@
     padding-left: 53px;
     background-position: 190px 62px;
   }
+}
+
+.description__weight-gain .description__link {
+  background-position: 119px 21px;
 }
