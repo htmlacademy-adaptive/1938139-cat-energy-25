@@ -1,5 +1,60 @@
+.comments {
+  position: relative;
+}
+
+.comments::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.comments__line {
+  width: 1220px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
 .comments__title {
+  width: 130px;
+  padding: 0 20px;
+  background-color: #ffffff;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    margin-left: 30px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding: 0 40px;
+  }
+}
+
+.comments__text {
+  display: block;
+  width: 280px;
+  min-height: 150px;
+  margin: 0 auto;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    width: 661px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

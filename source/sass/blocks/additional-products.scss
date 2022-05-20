@@ -1,8 +1,40 @@
 .additional-products {
+  position: relative;
   font-family: "oswaldregular", sans-serif;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+    padding: 0 110px;
+  }
+}
+
+.additional-products::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 33px;
+  left: 0;
+  background-color: #68b738;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    top: 53px;
+  }
+}
+
+.additional-products__line {
+  width: 1220px;
+  margin: 0 auto;
 }
 
 .additional-products__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -10,24 +42,60 @@
 }
 
 .additional-products__title {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #ffffff;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional-products__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+  }
 }
 
 .additional-products__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #ebebeb;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.additional-products__item:last-child {
+  border-bottom: 1px solid #ebebeb;
 }
 
 .additional-products__subtitle {
+  grid-column: 1 / -1;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__text {
@@ -35,4 +103,23 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    min-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+.additional-products__button {
+  grid-column: 1 / -1;
+  margin-bottom: 19px;
+  padding: 10px 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / -1;
+  }
 }

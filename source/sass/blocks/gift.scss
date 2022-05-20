@@ -1,10 +1,31 @@
 .gift {
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .gift__text {
+  width: 161px;
   color: #ffffff;
+  background-image: url("../img/present.svg");
+  background-repeat: no-repeat;
+  background-position: 43px 59px;
+  margin: 0 auto;
+  padding: 187px 0 43px 0;
+  text-align: center;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 0 69px 422px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
+    padding: 184px 0 42px 0;
+    background-position: 43px 59px;
+  }
 }

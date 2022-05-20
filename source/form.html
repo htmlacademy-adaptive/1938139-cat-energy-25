@@ -12,20 +12,21 @@
         <img src="img/logotype-image.svg" width="33" height="38" alt="Логотип «Кэт энерджи»" class="main-header__logo-image">
         <img src="img/logotype-text.svg" width="101" height="18" alt="Надпись «Кэт энерджи»" class="main-header__logo-text">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <img src="img/burger-open.svg" alt="Открыть меню." class="main-nav__open-burger">
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list site-list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -38,12 +39,18 @@
         <form action="https://echo.htmlacademy.ru/" class="program-form__questionnairre" method="get">
           <div class="program-form__wrapper">
             <div class="program-form__description">
-              <label class="program-form__info" for="name-cat">Имя:*</label>
-              <input type="text" class="program-form__text" value="Барсик" name="name-cat" id="name-cat" required>
-              <label class="program-form__info" for="weight-cat">Вес (кг):*</label>
-              <input type="text" class="program-form__text" value="7" name="weight-cat" id="weight-cat" required>
-              <label class="program-form__info" for="age-cat">Возраст (лет):</label>
-              <input type="text" class="program-form__text" value="7" name="age-cat" id="age-cat" required>
+              <div class="program-form__label-wrapper">
+                <label class="program-form__info" for="name-cat">Имя:*</label>
+                <input type="text" class="program-form__input-text" value="Барсик" name="name-cat" id="name-cat" required>
+              </div>
+              <div class="program-form__label-wrapper">
+                <label class="program-form__info" for="weight-cat">Вес (кг):*</label>
+                <input type="text" class="program-form__input-text" value="7" name="weight-cat" id="weight-cat" required>
+              </div>
+              <div class="program-form__label-wrapper">
+                <label class="program-form__info" for="age-cat">Возраст (лет):</label>
+                <input type="text" class="program-form__input-text" value="7" name="age-cat" id="age-cat" required>
+              </div>
             </div>
             <div class="program-form__diet diet">
               <ul class="diet__list">
@@ -69,18 +76,30 @@
             </div>
           </div>
           <div class="program-form__contact contact">
-            <h2 class="contact__title">Контактные данные (владельца кота)</h2>
-            <label for="e-mail" class="contact__label">E-mail:*</label>
-            <input class="contact__input" type="email" name="e-mail" id="e-mail" value="kuklachev@gmail.com" required>
-            <label for="phone" class="contact__label">Телефон:*</label>
-            <input class="contact__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
+            <div class="contact__line">
+              <h2 class="contact__title">Контактные данные (владельца кота)</h2>
+            </div>
+            <div class="contact__wrapper">
+              <div class="contact__label-wrapper">
+                <label for="e-mail" class="contact__label">E-mail:*</label>
+                <input class="contact__input" type="email" name="e-mail" id="e-mail" value="kuklachev@gmail.com" required>
+              </div>
+              <div class="contact__label-wrapper">
+                <label for="phone" class="contact__label">Телефон:*</label>
+                <input class="contact__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
+              </div>
+            </div>
           </div>
           <div class="program-form__comments comments">
-            <h2 class="comments__title">Комментарий</h2>
+            <div class="comments__line">
+              <h2 class="comments__title">Комментарий</h2>
+            </div>
             <textarea class="comments__text" name="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="program-form__additionally additionally">
-            <h2 class="additionally__title">Дополнительно</h2>
+            <div class="additionally__line">
+              <h2 class="additionally__title">Дополнительно</h2>
+            </div>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <input type="checkbox" class="additionally__input" name="sweetener" id="sweetener" checked>
@@ -100,8 +119,10 @@
               </li>
             </ul>
           </div>
-          <button class="program-form__button button" type="submit">Отправить заявку</button>
-          <p class="program-form__required-field">* — Обязательные поля</p>
+          <div class="program-form__button-wrapper">
+            <button class="program-form__button button" type="submit">Отправить заявку</button>
+            <p class="program-form__required-field">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <section class="addres">
@@ -116,18 +137,24 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a href="#" class="main-footer__link" aria-label="Логотип «Кэт энерджи»">
-          <img src="img/footer-logo.svg" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
+          <img src="img/logotype-text.svg" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <img src="img/vkontakte.svg" alt="Мы в контакте." class="social__icon">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="img/youtube.svg" alt="Мы в Ютубе." class="social__icon">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <img src="img/telegram.svg" alt="Мы в Телеграме." class="social__icon">
+              </a>
             </li>
           </ul>
         </div>
