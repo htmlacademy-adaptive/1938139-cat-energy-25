@@ -22,6 +22,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+  }
 }
 
 .catalog__list {
@@ -80,8 +84,32 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 85%;
-    left: 40%;
+    display: block;
+    top: -70px;
+    left: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: 44px;
+  }
+}
+
+.catalog__item:nth-child(even) .catalog__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    top: -95px;
+    left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: -75px;
+    left: 44px;
   }
 }
 

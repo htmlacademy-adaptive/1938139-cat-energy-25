@@ -9,11 +9,11 @@
   @media (min-width: $tablet-width) {
     position: relative;
     display: flex;
-    justify-content: space-between;
     top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: start;
+    justify-content: center;
+    margin-left: 11px;
   }
 }

@@ -1,0 +1,28 @@
+.control {
+  position: relative;
+  display: block;
+  margin-top: 25px;
+  padding-left: 46px;
+}
+
+.control__mark {
+  position: absolute;
+  left: -1px;
+  top: -7px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
