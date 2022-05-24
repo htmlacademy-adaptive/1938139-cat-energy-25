@@ -119,7 +119,7 @@
 .program-form__contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .program-form__comments {
@@ -141,6 +141,8 @@
 }
 
 .program-form__button-wrapper {
+  margin-bottom: 31px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -152,7 +154,7 @@
   width: 280px;
   height: 40px;
   margin: 0 auto;
-  margin-top: 34px;
+  margin-top: 37px;
   border: none;
 
   @media (min-width: $desktop-width) {

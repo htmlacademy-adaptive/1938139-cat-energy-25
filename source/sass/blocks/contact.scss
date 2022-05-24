@@ -27,6 +27,7 @@
   margin: 0;
   padding: 0 20px;
   padding-top: 26px;
+  padding-right: 11px;
   background-color: #ffffff;
   font-size: 24px;
   line-height: 26px;
@@ -64,17 +65,21 @@
 }
 
 .contact__label-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
 }
 
 .contact__label {
-  width: 61px;
+  display: block;
+  width: 71px;
+  padding-top: 14px;
   color: #444444;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 71px;
@@ -86,9 +91,40 @@
 .contact__input {
   width: 100%;
   height: 39px;
-  margin-left: 12px;
+  margin-left: 11px;
+  padding-left: 13px;
+  font-family: "oswaldregular", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
     width: 486px;
   }
+}
+
+.contact__label-wrapper:nth-child(2) .contact__input {
+  margin-left: 10px;
+}
+
+.contact__phone {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  fill: #000000;
+}
+
+.contact__mail {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  stroke: #000000;
+}
+
+.contact__phone:hover {
+  fill: #68b738;
+}
+
+.contact__mail:hover {
+  stroke: #68b738;
 }

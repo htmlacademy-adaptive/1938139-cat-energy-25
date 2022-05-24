@@ -16,7 +16,7 @@
           <img src="img/logotype-text.svg" width="101" height="18" srcset="img/logotype-text.svg 2x" alt="Надпись «Кэт энерджи»" class="main-header__logo-text">
         </picture>
       </a>
-      <nav class="main-nav main-nav__form main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <img src="img/burger-open.svg" alt="Открыть меню." class="main-nav__open-burger">
@@ -90,10 +90,12 @@
               <div class="contact__label-wrapper">
                 <label for="e-mail" class="contact__label">E-mail:*</label>
                 <input class="contact__input" type="email" name="e-mail" id="e-mail" value="kuklachev@gmail.com" required>
+                <svg width="19" class="contact__mail" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke-width="1.3" d="M.7 5.8v8M17.6 5.8v8M0 13.2h18M0 1.2h18M17.4 3 9 9.5.7 3V1.5h16.7V3Z"/></svg>
               </div>
               <div class="contact__label-wrapper">
                 <label for="phone" class="contact__label">Телефон:*</label>
                 <input class="contact__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
+                <svg width="20" class="contact__phone" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17.9 9.8H9.4V11h8.5l-2.1 2 .9 1 3.1-3.1a.8.8 0 0 0 0-1l-3.1-3-.9.8 2.1 2ZM8.1 19.8v-6.2a.7.7 0 0 0-.6-.6H3.1a1.2 1.2 0 0 0 1.2 1.2h2.5v5H3.1a1.8 1.8 0 0 1-1.9-1.7v-14a1.8 1.8 0 0 1 1.7-1.9h3.9v5H4.4a1.2 1.2 0 0 0-1.2 1.2h4.4a.6.6 0 0 0 .6-.6V1a.9.9 0 0 0-.7-.6H3.1a3 3 0 0 0-3.1 3v13.9a3 3 0 0 0 2.9 3h4.6a.5.5 0 0 0 .6-.4Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .3)" d="M0 0h20v20.1H0z"/></clipPath></defs></svg>
               </div>
             </div>
           </div>
@@ -109,20 +111,32 @@
             </div>
             <ul class="additionally__list">
               <li class="additionally__item">
-                <input type="checkbox" class="additionally__input" name="sweetener" id="sweetener" checked>
-                <label for="sweetener" class="additionally__label">Сахарозаменитель</label>
+                <label for="sweetener" class="additionally__label">
+                  <input type="checkbox" class="visually-hidden additionally__input" name="sweetener" id="sweetener" checked>
+                  <span class="additionally__mark"></span>
+                  <span>Сахарозаменитель</span>
+                </label>
               </li>
               <li class="additionally__item">
-                <input type="checkbox" class="additionally__input" name="drinking-water" id="drinking-water">
-                <label for="drinking-water" class="additionally__label">Питьевая вода</label>
+                <label for="drinking-water" class="additionally__label">
+                  <input type="checkbox" class="visually-hidden additionally__input" name="drinking-water" id="drinking-water">
+                  <span class="additionally__mark"></span>
+                  <span>Питьевая вода</span>
+                </label>
               </li>
               <li class="additionally__item">
-                <input type="checkbox" class="additionally__input" name="milk" id="milk">
-                <label for="milk" class="additionally__label">Молоко</label>
+                <label for="milk" class="additionally__label">
+                  <input type="checkbox" class="visually-hidden additionally__input" name="milk" id="milk">
+                  <span class="additionally__mark"></span>
+                  <span>Молоко</span>
+                </label>
               </li>
               <li class="additionally__item">
-                <input type="checkbox" class="additionally__input" name="vitamins" id="vitamins">
-                <label for="vitamins" class="additionally__label">Витамины</label>
+                <label for="vitamins" class="additionally__label">
+                  <input type="checkbox" class="visually-hidden additionally__input" name="vitamins" id="vitamins">
+                  <span class="additionally__mark"></span>
+                  <span>Витамины</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -144,23 +158,29 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a href="#" class="main-footer__link" aria-label="Логотип «Кэт энерджи»">
-          <img src="img/logotype-text.svg" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
+          <img src="img/logotype-text.svg" width="128" height="24" alt="Логотип «Кэт энерджи»" class="main-footer__logo">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <img src="img/vkontakte.svg" alt="Мы в контакте." class="social__icon">
+                <svg class="social__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="img/youtube.svg" alt="Мы в Ютубе." class="social__icon">
+                <svg class="social__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <img src="img/telegram.svg" alt="Мы в Телеграме." class="social__icon">
+                <svg class="social__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -168,7 +188,9 @@
         <div class="main-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии.">
-            <img src="img/logo-html.svg" alt="Логотип академии." class="copyright__logo">
+            <svg class="copyright__logo" width="27" height="34">
+              <use xlink:href="img/sprite.svg#logo-academy"></use>
+            </svg>
           </a>
         </div>
       </div>
