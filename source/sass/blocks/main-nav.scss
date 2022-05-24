@@ -14,18 +14,18 @@
     z-index: 2;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-desktop-1.png");
+      background-image: url("../img/background-desktop-2x.png");
     }
   }
 }
 
-.body-catalog .main-nav {
+.main-nav__catalog {
   @media (min-width: $desktop-width) {
     background-image: none;
   }
 }
 
-.body-form .main-nav {
+.main-nav__form {
   @media (min-width: $desktop-width) {
     background-image: none;
   }
@@ -48,13 +48,13 @@
   }
 }
 
-.body-catalog .main-nav__wrapper {
+.main-nav__catalog .main-nav__wrapper {
   @media (min-width: $desktop-width) {
     background-color: inherit;
   }
 }
 
-.body-form .main-nav__wrapper {
+.main-nav__form .main-nav__wrapper {
   @media (min-width: $desktop-width) {
     background-color: inherit;
   }
@@ -171,14 +171,14 @@
   }
 }
 
-.body-catalog .main-nav__link {
+.main-nav__catalog .main-nav__link {
   @media (min-width: $desktop-width) {
     color: #000000;
     background-color: inherit;
   }
 }
 
-.body-form .main-nav__link {
+.main-nav__form .main-nav__link {
   @media (min-width: $desktop-width) {
     color: #000000;
     background-color: inherit;

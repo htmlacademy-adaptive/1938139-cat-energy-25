@@ -10,13 +10,13 @@
     <header class="main-header">
       <a href="#" class="main-header__logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg 1x, img/desktop.svg 2x" class="main-header__header-logo">
-          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg 1x, img/header-logo-tablet.svg 2x" class="main-header__header-logo">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" class="main-header__header-logo">
+          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" class="main-header__header-logo">
           <img src="img/logotype-image.svg" srcset="img/logotype-image.svg 2x" alt="Логотип «Кэт энерджи»" class="main-header__logo-image">
           <img src="img/logotype-text.svg" width="101" height="18" srcset="img/logotype-text.svg 2x" alt="Надпись «Кэт энерджи»" class="main-header__logo-text">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav__form main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <img src="img/burger-open.svg" alt="Открыть меню." class="main-nav__open-burger">
@@ -60,19 +60,22 @@
               <ul class="diet__list">
                 <li class="diet__item">
                   <label class="diet__control control">
-                    <input type="radio" class="control__input" value="weight loss" name="type-diet" checked>
+                    <input type="radio" class="visually-hidden control__input" value="weight loss" name="type-diet" checked>
+                    <span class="control__mark"></span>
                     <span>Похудение</span>
                   </label>
                 </li>
                 <li class="diet__item">
                   <label class="diet__control control">
-                    <input type="radio" class="control__input" value="weight gain" name="type-diet" >
+                    <input type="radio" class="visually-hidden control__input" value="weight gain" name="type-diet" >
+                    <span class="control__mark"></span>
                     <span>Набор массы</span>
                   </label>
                 </li>
                 <li class="diet__item">
                   <label class="diet__control control">
-                    <input type="radio" class="control__input" value="do not know (need advice)" name="type-diet">
+                    <input type="radio" class="visually-hidden control__input" value="do not know (need advice)" name="type-diet">
+                    <span class="control__mark"></span>
                     <span>Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
