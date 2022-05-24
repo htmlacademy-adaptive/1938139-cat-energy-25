@@ -17,15 +17,18 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 629px;
     margin: 0;
+    padding-top: 34px;
+    padding-left: 70px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    width: 565px;
-    min-height: 198px;
-    top: 95px;
+    width: 475px;
+    min-height: 95px;
+    top: 96px;
     left: 110px;
     background-color: #ffffff;
   }
@@ -46,6 +49,10 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+  }
 }
 
 .addres__text {
@@ -59,9 +66,16 @@
 
   @media (min-width: $tablet-width) {
     width: 171px;
+    padding-top: 22px;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 43px;
+    padding-top: 24px;
+    text-align: start;
   }
 }
 

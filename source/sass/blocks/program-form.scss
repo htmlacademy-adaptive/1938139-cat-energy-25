@@ -13,6 +13,7 @@
 }
 
 .program-form__title {
+  margin-top: 27px;
   padding: 0 20px;
   font-size: 36px;
   line-height: 36px;
@@ -31,6 +32,7 @@
 
 .program-form__text {
   width: 226px;
+  margin-top: 38px;
   padding: 0 20px;
   font-size: 14px;
   line-height: 18px;
@@ -47,6 +49,10 @@
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
+}
+
+.program-form__questionnairre {
+  margin-top: 38px;
 }
 
 .program-form__wrapper {
@@ -116,9 +122,11 @@
 }
 
 .program-form__info {
+  display: block;
   color: #444444;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body">
+  <body class="page__body body-catalog">
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img src="img/logotype-image.svg" width="33" height="38" alt="Логотип «Кэт энерджи»" class="main-header__logo-image">
-        <img src="img/logotype-text.svg" width="101" height="18" alt="Надпись «Кэт энерджи»" class="main-header__logo-text">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg 1x, img/desktop.svg 2x" class="main-header__header-logo">
+          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg 1x, img/header-logo-tablet.svg 2x" class="main-header__header-logo">
+          <img src="img/logotype-image.svg" srcset="img/logotype-image.svg 2x" alt="Логотип «Кэт энерджи»" class="main-header__logo-image">
+          <img src="img/logotype-text.svg" width="101" height="18" srcset="img/logotype-text.svg 2x" alt="Надпись «Кэт энерджи»" class="main-header__logo-text">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -19,10 +23,10 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
@@ -37,7 +41,11 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-1.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-1-desktop.png 1x, img/catalog/desktop/catalog-1-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-1-tablet.png 1x, img/catalog/tablet/catalog-1-tablet.png 2x">
+              <img src="img/catalog/catalog-card-1.png" srcset="img/catalog/catalog-card-1.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 500 г</caption>
               <tr class="table__wrapper-data">
@@ -56,7 +64,11 @@
             <a href="#" class="catalog__button button">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-2.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-2-desktop.png 1x, img/catalog/desktop/catalog-2-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-2-tablet.png 1x, img/catalog/tablet/catalog-2-tablet.png 2x">
+              <img src="img/catalog/catalog-card-2.png" srcset="img/catalog/catalog-card-2.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 1000 г</caption>
               <tr class="table__wrapper-data">
@@ -75,7 +87,11 @@
             <a href="#" class="catalog__button button">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-3.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-3-desktop.png 1x, img/catalog/desktop/catalog-3-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-3-tablet.png 1x, img/catalog/tablet/catalog-3-tablet.png 2x">
+              <img src="img/catalog/catalog-card-3.png" srcset="img/catalog/catalog-card-3.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 500 г</caption>
               <tr class="table__wrapper-data">
@@ -94,7 +110,11 @@
             <a href="#" class="catalog__button button">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-4.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-4-desktop.png 1x, img/catalog/desktop/catalog-4-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-4-tablet.png 1x, img/catalog/tablet/catalog-4-tablet.png 2x">
+              <img src="img/catalog/catalog-card-4.png" srcset="img/catalog/catalog-card-4.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 1000 г</caption>
               <tr class="table__wrapper-data">
@@ -113,7 +133,11 @@
             <a href="#" class="catalog__button button">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-5.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-5-desktop.png 1x, img/catalog/desktop/catalog-5-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-5-tablet.png 1x, img/catalog/tablet/catalog-5-tablet.png 2x">
+              <img src="img/catalog/catalog-card-5.png" srcset="img/catalog/catalog-card-5.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 500 г</caption>
               <tr class="table__wrapper-data">
@@ -132,7 +156,11 @@
             <a href="#" class="catalog__button button">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-6.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-6-desktop.png 1x, img/catalog/desktop/catalog-6-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-6-tablet.png 1x, img/catalog/tablet/catalog-6-tablet.png 2x">
+              <img src="img/catalog/catalog-card-6.png" srcset="img/catalog/catalog-card-6.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 1000 г</caption>
               <tr class="table__wrapper-data">
@@ -151,7 +179,11 @@
             <a href="#" class="catalog__button button">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img src="img/catalog/catalog-card-1.png" alt="Корм для кошек." class="catalog__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-7-desktop.png 1x, img/catalog/desktop/catalog-7-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-7-tablet.png 1x, img/catalog/tablet/catalog-7-tablet.png 2x">
+              <img src="img/catalog/catalog-card-7.png" srcset="img/catalog/catalog-card-7.png 2x" alt="Корм для кошек." class="catalog__img">
+            </picture>
             <table class="catalog__table table">
               <caption class="table__title">Cat Energy PRO 500 г</caption>
               <tr class="table__wrapper-data">
