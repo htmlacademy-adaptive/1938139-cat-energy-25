@@ -77,7 +77,8 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'sourse/*ico',
+    'sourse/fonts/*.{woff2,woff}',
+    'sourse/*.ico',
   ], {
     base: 'sourse'
   })
@@ -98,10 +99,6 @@ const server = (done) => {
   done();
 }
 
-const clean = () => {
-  return del('build');
-}
-
 const reload = (done) => {
   browser.reload();
   done();
@@ -114,6 +111,10 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+const clean = () => {
+  return del('build');
+}
+
 //Build
 
 export const build = gulp.series(
@@ -123,6 +124,7 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    fonts,
     svg,
     sprite,
     createWebp
@@ -131,5 +133,5 @@ export const build = gulp.series(
 
 
 export default gulp.series(
-  html, styles, images, svg, sprite, copy, fonts, createWebp, server, watcher
+  html, styles, images, svg, sprite, clean, copy, fonts, createWebp, server, watcher
 );
