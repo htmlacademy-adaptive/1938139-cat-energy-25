@@ -144,6 +144,14 @@
   height: 2px;
   bottom: 14px;
   left: 0;
+  background-color: #ffffff;
+}
+
+.main-nav__form .main-nav__item--active::before {
+  background-color: #68b738;
+}
+
+.main-nav__catalog .main-nav__item--active::before {
   background-color: #68b738;
 }
 
@@ -169,6 +177,14 @@
     color: #ffffff;
     background-color: inherit;
   }
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:focus {
+  opacity: 0.3;
 }
 
 .main-nav__catalog .main-nav__link {

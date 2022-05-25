@@ -3,6 +3,14 @@
   display: block;
   margin-top: 25px;
   padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 77px;
+  }
 }
 
 .control__mark {
@@ -14,6 +22,20 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 39px;
+    height: 39px;
+    left: -5px;
+    top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 39px;
+    height: 39px;
+    left: 10px;
+    top: -5px;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {
@@ -25,4 +47,11 @@
   background-color: #68b738;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 11px;
+    width: 16px;
+    height: 16px;
+  }
 }

@@ -20,7 +20,8 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    margin-top: 41px;
+    padding: 0 69px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -41,7 +42,8 @@
 
   @media (min-width: $tablet-width) {
     width: 323px;
-    padding: 0 50px;
+    margin-top: 55px;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -58,12 +60,14 @@
 .program-form__wrapper {
   padding: 0 20px;
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    padding: 0 41px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
     padding: 0 110px;
   }
 }
@@ -74,7 +78,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,18 +91,43 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.program-form__info {
+  display: block;
+  padding-top: 13px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 4px;
+    padding-top: 11px;
+    padding-right: 3px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__label-wrapper:nth-child(2) .program-form__info {
   width: 95px;
 
   @media (min-width: $tablet-width) {
-    width: 82px;
+    width: 92px;
   }
 }
 
 .program-form__label-wrapper:nth-child(3) .program-form__info {
   width: 174px;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+  }
 }
 
 .program-form__input-text {
@@ -110,6 +139,19 @@
   line-height: 18px;
   font-family: "oswaldregular", sans-serif;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    height: 46px;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__label-wrapper:nth-child(2) .program-form__input-text {
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
 }
 
 .program-form__diet {
@@ -124,20 +166,6 @@
 
 .program-form__comments {
   margin-bottom: 22px;
-}
-
-.program-form__info {
-  display: block;
-  padding-top: 13px;
-  color: #444444;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .program-form__button-wrapper {
