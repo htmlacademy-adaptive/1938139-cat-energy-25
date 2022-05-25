@@ -161,6 +161,10 @@
   }
 }
 
+.description__link:focus {
+  opacity: 0.3;
+}
+
 .description__weight-gain .description__link {
   background-position: 119px 21px;
 
