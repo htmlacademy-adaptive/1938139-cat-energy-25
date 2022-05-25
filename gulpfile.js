@@ -133,5 +133,5 @@ export const build = gulp.series(
 
 
 export default gulp.series(
-  html, styles, images, svg, sprite, clean, copy, fonts, createWebp, server, watcher
+  clean, html, styles, images, svg, sprite, copy, fonts, createWebp, server, watcher
 );
